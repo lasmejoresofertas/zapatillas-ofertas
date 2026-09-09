@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas en Zapatillas y Calzado Deportivo | Argentina</title>
+  <meta name="description" content="Encuentra las mejores ofertas en zapatillas running, urbanas y deportivas con envíos a toda Argentina. Selección de promociones en Mercado Libre.">
+  
+  <!-- Estilos CSS -->
+  <style>
+    :root {
+      --primary: #ffe600; /* Amarillo Mercado Libre / Ofertas */
+      --dark: #222222;
+      --gray: #f5f5f5;
+      --text: #333333;
+      --accent: #2962ff;
+      --accent-hover: #0039cb;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* Header */
+    header {
+      background-color: var(--primary);
+      padding: 1rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: var(--dark);
+      margin-bottom: 0.2rem;
+    }
+
+    header p {
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    /* Banner Informativo */
+    .banner {
+      background-color: #e3f2fd;
+      color: #0d47a1;
+      text-align: center;
+      padding: 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* Grid de Productos */
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Tarjeta de Producto */
+    .product-card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #ff3d00;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+
+    .product-img {
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      background-color: #fff;
+      padding: 1rem;
+    }
+
+    .product-info {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-category {
+      font-size: 0.75rem;
+      color: #888;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .product-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 0.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .price-box {
+      margin-top: auto;
+      padding-top: 0.5rem;
+    }
+
+    .btn-buy {
+      display: block;
+      width: 100%;
+      background-color: var(--accent);
+      color: #ffffff;
+      text-align: center;
+      padding: 0.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin-top: 0.75rem;
+      transition: background-color 0.2s;
+    }
+
+    .btn-buy:hover {
+      background-color: var(--accent-hover);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: var(--dark);
+      color: #888;
+      font-size: 0.8rem;
+      margin-top: 3rem;
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Catálogo de Calzado & Zapatillas</h1>
+    <p>Las mejores ofertas y promociones actualizadas de Mercado Libre Argentina</p>
+  </header>
+
+  <div class="banner">
+    🚚 Envíos a todo el país | Compras 100% protegidas mediante Mercado Libre
+  </div>
+
+  <main class="container">
+    <div class="product-grid">
+
+      <!-- TARJETA DE PRODUCTO 1 -->
+      <article class="product-card">
+        <span class="badge">OFERTA DESTACADA</span>
+        <img class="product-img" src="https://via.placeholder.com/300x300?text=Zapatillas+Running" alt="Zapatillas Running Pro">
+        <div class="product-info">
+          <span class="product-category">Running / Deportivas</span>
+          <h2 class="product-title">Zapatillas Running Amortiguación Livianas</h2>
+          <div class="price-box">
+            <!-- Coloca tu link de afiliado en el atributo href -->
+            <a href="TU_LINK_DE_AFILIADO_AQUI" target="_blank" rel="nofollow sponsored" class="btn-buy">
+              Ver precio en Mercado Libre ➔
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- TARJETA DE PRODUCTO 2 -->
+      <article class="product-card">
+        <img class="product-img" src="https://via.placeholder.com/300x300?text=Zapatillas+Urbanas" alt="Zapatillas Urbanas">
+        <div class="product-info">
+          <span class="product-category">Urbano / Moda</span>
+          <h2 class="product-title">Zapatillas Urbanas Estilo Clásico Unisex</h2>
+          <div class="price-box">
+            <a href="TU_LINK_DE_AFILIADO_AQUI" target="_blank" rel="nofollow sponsored" class="btn-buy">
+              Ver precio en Mercado Libre ➔
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- TARJETA DE PRODUCTO 3 -->
+      <article class="product-card">
+        <span class="badge">MÁS VENDIDO</span>
+        <img class="product-img" src="https://via.placeholder.com/300x300?text=Zapatillas+Basquet" alt="Zapatillas Básquet">
+        <div class="product-info">
+          <span class="product-category">Básquetbol / Deportivas</span>
+          <h2 class="product-title">Zapatillas Básquet Alta Tracción Rendimiento</h2>
+          <div class="price-box">
+            <a href="TU_LINK_DE_AFILIADO_AQUI" target="_blank" rel="nofollow sponsored" class="btn-buy">
+              Ver precio en Mercado Libre ➔
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Este sitio participa en el Programa de Afiliados de Mercado Libre.</p>
+    <p>&copy; 2026 Catálogo de Ofertas - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
