@@ -6,20 +6,121 @@
   <title>Ofertas de Zapatillas</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  color: #333333;
-}
+    /* RESET Y BASE */
     * {
-      .card img {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: #f4f4f9;
+      color: #333333;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #111;
+    }
+
+    /* BARRA DE NAVEGACIÓN */
+    .brand-nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin: 20px 0 30px 0;
+      padding: 0 15px;
+    }
+
+    .btn-brand {
+      display: inline-block;
+      background-color: #222222;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: 1px solid #111111;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      transition: all 0.2s ease;
+    }
+
+    .btn-brand:hover {
+      background-color: #3483fa;
+      color: #ffffff;
+      border-color: #3483fa;
+    }
+
+    /* SECCIONES Y GRILLA */
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    /* TARJETAS DE PRODUCTO */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
       width: 100%;
       height: 220px;
       object-fit: contain;
-      background-color: #fff;
+      background-color: #ffffff;
       padding: 10px;
     }
 
+    .card-body {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* ETIQUETAS / BADGES */
     .badges {
       display: flex;
       gap: 5px;
@@ -44,77 +145,37 @@
       color: #2968c8;
     }
 
+    /* PRECIOS Y TÍTULOS */
+    .title {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .price-container {
+      margin-bottom: 15px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      color: #00a650;
+      font-weight: bold;
+    }
+
     .discount {
       font-size: 0.85rem;
       color: #00a650;
       font-weight: bold;
       margin-left: 5px;
     }
-    }
-    body {
-      background-color: #f4f4f9;
-      color: #333;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    header h1 {
-      font-size: 2rem;
-      color: #111;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-    }
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      background-color: #ffffff;
-    }
-    .card-body {
-      padding: 15px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .title {
-      font-size: 1rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .price-container {
-      margin-bottom: 15px;
-    }
-    .old-price {
-      text-decoration: line-through;
-      color: #888;
-      font-size: 0.85rem;
-    }
-    .price {
-      font-size: 1.3rem;
-      color: #00a650; /* Verde estilo Mercado Libre */
-      font-weight: bold;
-    }
+
+    /* BOTÓN COMPRAR */
     .btn {
       display: block;
       text-align: center;
@@ -126,40 +187,9 @@
       font-weight: bold;
       transition: background-color 0.2s ease;
     }
+
     .btn:hover {
       background-color: #2968c8;
-    }
-    .brand-nav {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin: 20px 0;
-      padding: 0 15px;
-    }
-
-    .btn-brand {
-      display: inline-block;
-      background-color: #222222;
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.9rem;
-      padding: 8px 18px;
-      border-radius: 20px;
-      border: 1px solid #111111;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      transition: all 0.2s ease;
-    }
-
-    .btn-brand:hover {
-      background-color: #3483fa;
-      color: #ffffff;
-      border-color: #3483fa;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -168,249 +198,139 @@
   <header>
     <h1>🔥 Las Mejores Ofertas de Zapatillas</h1>
   </header>
-<!-- BARRA DE BOTONES DE MARCAS -->
-<nav class="brand-nav">
-  <a href="#nike" class="btn-brand">Nike</a>
-  <a href="#adidas" class="btn-brand">Adidas</a>
-  <a href="#fila" class="btn-brand">Fila</a>
-  <a href="#kappa" class="btn-brand">Kappa</a>
-  <a href="#puma" class="btn-brand">Puma</a>
-  <a href="#topper" class="btn-brand">Topper</a>
-  <a href="#new-balance" class="btn-brand">New Balance</a>
-  <a href="#reebok" class="btn-brand">Reebok</a>
-  <a href="#asics" class="btn-brand">Asics</a>
-  <a href="#under-armour" class="btn-brand">Under Armour</a>
-  <a href="#converse" class="btn-brand">Converse</a>
-  <a href="#vans" class="btn-brand">Vans</a>
-  <a href="#salomon" class="btn-brand">Salomon</a>
-  <a href="#skechers" class="btn-brand">Skechers</a>
-  <a href="#john-foos" class="btn-brand">John Foos</a>
-  <a href="#dc-shoes" class="btn-brand">DC Shoes</a>
-  <a href="#columbia" class="btn-brand">Columbia</a>
-  <a href="#diadora" class="btn-brand">Diadora</a>
-</nav>
-  <main class="grid">
 
-    <!-- SECCIÓN NIKE -->
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav class="brand-nav">
+    <a href="#nike" class="btn-brand">Nike</a>
+    <a href="#adidas" class="btn-brand">Adidas</a>
+    <a href="#fila" class="btn-brand">Fila</a>
+    <a href="#kappa" class="btn-brand">Kappa</a>
+    <a href="#puma" class="btn-brand">Puma</a>
+    <a href="#topper" class="btn-brand">Topper</a>
+    <a href="#new-balance" class="btn-brand">New Balance</a>
+    <a href="#reebok" class="btn-brand">Reebok</a>
+    <a href="#asics" class="btn-brand">Asics</a>
+    <a href="#under-armour" class="btn-brand">Under Armour</a>
+    <a href="#converse" class="btn-brand">Converse</a>
+    <a href="#vans" class="btn-brand">Vans</a>
+    <a href="#salomon" class="btn-brand">Salomon</a>
+    <a href="#skechers" class="btn-brand">Skechers</a>
+    <a href="#john-foos" class="btn-brand">John Foos</a>
+    <a href="#dc-shoes" class="btn-brand">DC Shoes</a>
+    <a href="#columbia" class="btn-brand">Columbia</a>
+    <a href="#diadora" class="btn-brand">Diadora</a>
+  </nav>
+
+  <main>
+
+    <!-- SECCIÓN NIKE (2 Artículos) -->
     <section id="nike">
       <h2>Nike</h2>
       <div class="grid">
+        <!-- 1. Nike Juniper -->
         <article class="card">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_622087-MLA75611886343_042024-F.webp" alt="Nike Juniper Trail 2">
-      <div class="card-body">
-        
-        <!-- ETIQUETAS DE ENVÍO Y CUOTAS -->
-        <div class="badges">
-          <span class="badge shipping">Envío Gratis a toda Argentina</span>
-          <span class="badge promo">6 Cuotas Sin Interés</span>
-        </div>
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_622087-MLA75611886343_042024-F.webp" alt="Nike Juniper Trail 2">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge shipping">Envío Gratis a toda Argentina</span>
+              <span class="badge promo">6 Cuotas Sin Interés</span>
+            </div>
+            <h2 class="title">Nike Juniper Trail 2</h2>
+            <div class="price-container">
+              <span class="old-price">$179.999</span>
+              <p class="price">$150.542 <span class="discount">16% OFF</span></p>
+            </div>
+            <a href="https://meli.la/1LBcech" target="_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
+          </div>
+        </article>
 
-        <h2 class="title">Nike Juniper Trail 2</h2>
-        
-        <div class="price-container">
-          <span class="old-price">$179.999</span>
-          <p class="price">$150.542 <span class="discount">16% OFF</span></p>
-        </div>
-        
-        <a href="https://meli.la/1LBcech" target="_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-      </div>
-    </article>
-
+        <!-- 2. Nike Charge -->
         <article class="card">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_821218-MLA83042144796_032025-F.webp" alt="Nike Charge Suede Negro">
-      <div class="card-body">
-        
-        <!-- ETIQUETAS DE ENVÍO Y CUOTAS -->
-        <div class="badges">
-          <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-          <span class="badge promo">6 Cuotas Sin Interés</span>
-        </div>
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_821218-MLA83042144796_032025-F.webp" alt="Nike Charge Suede Negro">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
+              <span class="badge promo">6 Cuotas Sin Interés</span>
+            </div>
+            <h2 class="title">Nike Charge Suede Negro</h2>
+            <div class="price-container">
+              <span class="old-price">$129.999</span>
+              <p class="price">$96.999,02 <span class="discount">35% OFF</span></p>
+            </div>
+            <a href="https://meli.la/1LBcech" target="_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
+          </div>
+        </article>
+      </div> 
+    </section>
 
-        <h2 class="title">Nike Charge Suede Negro</h2>
-        
-        <div class="price-container">
-          <span class="old-price">$129.999</span>
-          <p class="price">$96.999,02 <span class="discount">35% OFF</span></p>
-        </div>
-        
-        <a href="https://meli.la/1LBcech" target="_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-      </div>
-    </article>
-
-        </div> 
-</section>
-    
-   <!-- SECCIÓN ADIDAS -->
+    <!-- SECCIÓN ADIDAS (1 Artículo) -->
     <section id="adidas">
       <h2>Adidas</h2>
       <div class="grid">
+        <!-- 3. Adidas Courtwave -->
         <article class="card">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_816798-MLA111246011546_052026-F.webp" alt="Adidas Lifestyle Courtwave Hombre Negro">
-      <div class="card-body">
- 
-        <!-- ETIQUETAS DE ENVÍO Y CUOTAS -->
-        <div class="badges">
-          <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-          <span class="badge promo">6 Cuotas Sin Interés</span>
-        </div>
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_816798-MLA111246011546_052026-F.webp" alt="Adidas Lifestyle Courtwave Hombre Negro">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
+              <span class="badge promo">6 Cuotas Sin Interés</span>
+            </div>
+            <h2 class="title">Adidas Lifestyle Courtwave Hombre Negro</h2>
+            <div class="price-container">
+              <span class="old-price"></span>
+              <p class="price">$99.999 <span class="discount"></span></p>
+            </div>
+            <a href="https://meli.la/1F9epbE" target="_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
+          </div>
+        </article>
+      </div> 
+    </section>
 
-        <h2 class="title">Adidas Lifestyle Courtwave Hombre Negro</h2>
- 
-        <div class="price-container">
-          <span class="old-price"></span>
-          <p class="price">$99.999 <span class="discount"></span></p>
-        </div>
- 
-        <a href="https://meli.la/1F9epbE" target="\_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-      </div>
-    </article>
-
-        </div> 
-</section>
-    
-    <!-- SECCIÓN FILA -->
+    <!-- SECCIÓN FILA (1 Artículo) -->
     <section id="fila">
       <h2>Fila</h2>
       <div class="grid">
+        <!-- 4. Fila Progress Lite -->
         <article class="card">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_734240-MLA113410225817_062026-F.webp" alt="Running Hombre Fila Progress Lite">
-      <div class="card-body">
-        
-        <!-- ETIQUETAS DE ENVÍO Y CUOTAS -->
-        <div class="badges">
-          <span class="badge shipping">Envío Gratis a toda Argentina</span>
-          <span class="badge promo">2 Cuotas Sin Interés</span>
-        </div>
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_734240-MLA113410225817_062026-F.webp" alt="Running Hombre Fila Progress Lite">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge shipping">Envío Gratis a toda Argentina</span>
+              <span class="badge promo">2 Cuotas Sin Interés</span>
+            </div>
+            <h2 class="title">Running Hombre Fila Progress Lite</h2>
+            <div class="price-container">
+              <span class="old-price">$84.899</span>
+              <p class="price">$76.409,10 <span class="discount">10% OFF</span></p>
+            </div>
+            <a href="https://meli.la/2Wmubi7" target="_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
+          </div>
+        </article>
+      </div> 
+    </section>
 
-        <h2 class="title">Running Hombre Fila Progress Lite</h2>
-        
-        <div class="price-container">
-          <span class="old-price">$84.899</span>
-          <p class="price">$76.409,10 <span class="discount">10% OFF</span></p>
-        </div>
-        
-        <a href="https://meli.la/2Wmubi7" target="_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-      </div>
-    </article>
-
-        </div> 
-</section>
-    
-    <!-- SECCIÓN KAPPA -->
+    <!-- SECCIÓN KAPPA (1 Artículo) -->
     <section id="kappa">
       <h2>Kappa</h2>
       <div class="grid">
+        <!-- 5. Kappa Authentic Kai 4 -->
         <article class="card">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_751995-MLA108110551439_032026-F.webp" alt="Kappa Authentic Kai 4 Blanco Unisex">
-      <div class="card-body">
-        
-        <!-- ETIQUETAS DE ENVÍO Y CUOTAS -->
-        <div class="badges">
-          <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-          <span class="badge promo">3 Cuotas Sin Interés</span>
-        </div>
-
-        <h2 class="title">Kappa Authentic Kai 4 Blanco Unisex</h2>
-        
-        <div class="price-container">
-          <span class="old-price">$79.999</span>
-          <p class="price">$58.216 <span class="discount">27% OFF</span></p>
-        </div>
-        
-        <a href="https://meli.la/2ewYs1b" target="_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-      </div>
-    </article>
-    
-        </div> 
-</section>
-    
-    <!-- PRODUCTO 4 -->
-    <article class="card">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_816798-MLA111246011546_052026-F.webp" alt="Adidas Lifestyle Courtwave Hombre Negro">
-      <div class="card-body">
- 
-        <!-- ETIQUETAS DE ENVÍO Y CUOTAS -->
-        <div class="badges">
-          <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-          <span class="badge promo">6 Cuotas Sin Interés</span>
-        </div>
-
-        <h2 class="title">Adidas Lifestyle Courtwave Hombre Negro</h2>
- 
-        <div class="price-container">
-          <span class="old-price"></span>
-          <p class="price">$99.999 <span class="discount"></span></p>
-        </div>
- 
-        <a href="https://meli.la/1F9epbE" target="\_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-      </div>
-    </article>
-    
-    <!-- PRODUCTO 2 -->
-    <article class="card">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_622087-MLA75611886343_042024-F.webp" alt="Nike Juniper Trail 2">
-      <div class="card-body">
-        
-        <!-- ETIQUETAS DE ENVÍO Y CUOTAS -->
-        <div class="badges">
-          <span class="badge shipping">Envío Gratis a toda Argentina</span>
-          <span class="badge promo">6 Cuotas Sin Interés</span>
-        </div>
-
-        <h2 class="title">Nike Juniper Trail 2</h2>
-        
-        <div class="price-container">
-          <span class="old-price">$179.999</span>
-          <p class="price">$150.542 <span class="discount">16% OFF</span></p>
-        </div>
-        
-        <a href="https://meli.la/1LBcech" target="_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-      </div>
-    </article>
-
-    <!-- PRODUCTO 3 -->
-    <article class="card">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_751995-MLA108110551439_032026-F.webp" alt="Kappa Authentic Kai 4 Blanco Unisex">
-      <div class="card-body">
-        
-        <!-- ETIQUETAS DE ENVÍO Y CUOTAS -->
-        <div class="badges">
-          <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-          <span class="badge promo">3 Cuotas Sin Interés</span>
-        </div>
-
-        <h2 class="title">Kappa Authentic Kai 4 Blanco Unisex</h2>
-        
-        <div class="price-container">
-          <span class="old-price">$79.999</span>
-          <p class="price">$58.216 <span class="discount">27% OFF</span></p>
-        </div>
-        
-        <a href="https://meli.la/2ewYs1b" target="_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-      </div>
-    </article>
-
-    <!-- PRODUCTO 4 -->
-    <article class="card">
-      <img src="https://http2.mlstatic.com/D_NQ_NP_2X_816798-MLA111246011546_052026-F.webp" alt="Adidas Lifestyle Courtwave Hombre Negro">
-      <div class="card-body">
- 
-        <!-- ETIQUETAS DE ENVÍO Y CUOTAS -->
-        <div class="badges">
-          <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-          <span class="badge promo">6 Cuotas Sin Interés</span>
-        </div>
-
-        <h2 class="title">Adidas Lifestyle Courtwave Hombre Negro</h2>
- 
-        <div class="price-container">
-          <span class="old-price"></span>
-          <p class="price">$99.999 <span class="discount"></span></p>
-        </div>
- 
-        <a href="https://meli.la/1F9epbE" target="\_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-      </div>
-    </article>
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_751995-MLA108110551439_032026-F.webp" alt="Kappa Authentic Kai 4 Blanco Unisex">
+          <div class="card-body">
+            <div class="badges">
+              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
+              <span class="badge promo">3 Cuotas Sin Interés</span>
+            </div>
+            <h2 class="title">Kappa Authentic Kai 4 Blanco Unisex</h2>
+            <div class="price-container">
+              <span class="old-price">$79.999</span>
+              <p class="price">$58.216 <span class="discount">27% OFF</span></p>
+            </div>
+            <a href="https://meli.la/2ewYs1b" target="_blank" rel="noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
+          </div>
+        </article>
+      </div> 
+    </section>
 
   </main>
 
