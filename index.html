@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Encontrá las mejores ofertas en zapatillas Nike, Adidas, Fila, Puma, Topper y más marcas en Argentina. Descuentos destacados con envío gratis y cuotas sin interés.">
   <meta name="google-site-verification" content="StJMX9towmeetosSg2_dNp-DYIQHhfsw6ulX4IK96DE" />
-  <title>Ofertas de Zapatillas en Argentina | Descuentos en Nike, Adidas, Fila y Más</title>
+  <title>Las mejores ofertas de zapatillas en Mercado Libre</title>
 
   <!-- Open Graph / WhatsApp / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Ofertas de Zapatillas en Argentina | Envíos Gratis y Cuotas">
+  <meta property="og:title" content="Las mejores ofertas de zapatillas en Mercado Libre">
   <meta property="og:description" content="Las mejores ofertas en zapatillas Nike, Adidas, Fila, Kappa y más. Encontrá tu modelo con descuento y cuotas sin interés.">
   <meta property="og:url" content="https://zapatillas-ofertas.vercel.app">
   <meta property="og:image" content="https://http2.mlstatic.com/D_NQ_NP_2X_622087-MLA75611886343_042024-F.webp">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ofertas de Zapatillas en Argentina">
+  <meta name="twitter:title" content="Las mejores ofertas de zapatillas en Mercado Libre">
   <meta name="twitter:description" content="Descuentos imperdibles en zapatillas urbanas y de running. Envíos a todo el país.">
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👟</text></svg>">
@@ -30,16 +30,12 @@
       padding: 0;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       -webkit-font-smoothing: antialiased;
       background-color: #f4f4f9;
       color: #333333;
-      padding: 20px;
+      padding: 40px 20px;
     }
 
     header {
@@ -48,186 +44,69 @@
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: 2.2rem;
+      font-weight: 800;
       color: #111;
+      margin-bottom: 20px;
     }
 
-    /* BARRA DE NAVEGACIÓN */
+    /* BARRA DE BOTONES DE MARCAS */
     .brand-nav {
       display: flex;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       flex-wrap: wrap;
-      margin: 20px 0 30px 0;
-      padding: 0 15px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 10px;
     }
 
     .btn-brand {
-      display: inline-block;
-      background-color: #222222;
-      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #ffffff;
+      color: #111111;
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.9rem;
-      padding: 8px 18px;
-      border-radius: 20px;
-      border: 1px solid #111111;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      transition: all 0.2s ease;
+      font-size: 0.95rem;
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+      transition: all 0.25s ease;
+    }
+
+    .btn-brand img {
+      height: 18px;
+      width: auto;
+      object-fit: contain;
     }
 
     .btn-brand:hover {
       background-color: #3483fa;
       color: #ffffff;
       border-color: #3483fa;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(52, 131, 250, 0.3);
     }
 
-    /* SECCIONES Y GRILLA */
-    main {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    section h2 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #ddd; 
-      padding-bottom: 5px;
-      display: flex;             
-      align-items: center;       
-      gap: 10px;
-    }
-
-    /* TAMAÑO DEL LOGO EN EL TÍTULO H2 */
-    .brand-logo {
-      height: 30px;
-      width: auto;
-      object-fit: contain;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    /* TARJETAS DE PRODUCTO */
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-    }
-
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: contain;
-      background-color: #ffffff;
-      padding: 10px;
-    }
-
-    .card-body {
-      padding: 15px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    /* ETIQUETAS / BADGES */
-    .badges {
-      display: flex;
-      gap: 5px;
-      flex-wrap: wrap;
-      margin-bottom: 8px;
-    }
-
-    .badge {
-      font-size: 0.75rem;
-      font-weight: bold;
-      padding: 3px 6px;
-      border-radius: 4px;
-    }
-
-    .badge.shipping {
-      background-color: #e6f7ee;
-      color: #00a650;
-    }
-
-    .badge.promo {
-      background-color: #e8f0fe;
-      color: #2968c8;
-    }
-
-    /* PRECIOS Y TÍTULOS */
-    .title {
-      font-size: 1rem;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .price-container {
-      margin-bottom: 15px;
-    }
-
-    .old-price {
-      text-decoration: line-through;
-      color: #888;
-      font-size: 0.85rem;
-    }
-
-    .price {
-      font-size: 1.3rem;
-      color: #00a650;
-      font-weight: bold;
-    }
-
-    .discount {
-      font-size: 0.85rem;
-      color: #00a650;
-      font-weight: bold;
-      margin-left: 5px;
-    }
-
-    /* BOTÓN COMPRAR */
-    .btn {
-      display: block;
-      text-align: center;
-      background-color: #3483fa;
-      color: #fff;
-      text-decoration: none;
-      padding: 12px;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background-color 0.2s ease;
-    }
-
-    .btn:hover {
-      background-color: #2968c8;
+    .btn-brand:hover img {
+      filter: brightness(0) invert(1);
     }
 
     @media (max-width: 600px) {
-      .btn {
-        display: block !important;
-        width: 100% !important;
-        padding: 10px 12px !important;
-        font-size: 0.9rem !important;
-        font-weight: 600 !important;
-        text-align: center;
-        box-sizing: border-box;
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      .btn-brand {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+      }
+
+      .btn-brand img {
+        height: 15px;
       }
     }
   </style>
@@ -235,419 +114,60 @@
 <body>
 
   <header>
-    <h1>🔥 Las Mejores Ofertas de Zapatillas</h1>
-  </header>
-
-  <!-- BARRA DE NAVEGACIÓN -->
-  <nav class="brand-nav">
-    <a href="#nike" class="btn-brand">Nike</a>
-    <a href="#adidas" class="btn-brand">Adidas</a>
-    <a href="#fila" class="btn-brand">Fila</a>
-    <a href="#kappa" class="btn-brand">Kappa</a>
-    <a href="#puma" class="btn-brand">Puma</a>
-    <a href="#topper" class="btn-brand">Topper</a>
-    <a href="#new-balance" class="btn-brand">New Balance</a>
-    <a href="#reebok" class="btn-brand">Reebok</a>
-    <a href="#asics" class="btn-brand">Asics</a>
-    <a href="#under-armour" class="btn-brand">Under Armour</a>
-    <a href="#converse" class="btn-brand">Converse</a>
-    <a href="#vans" class="btn-brand">Vans</a>
-    <a href="#salomon" class="btn-brand">Salomon</a>
-    <a href="#skechers" class="btn-brand">Skechers</a>
-    <a href="#john-foos" class="btn-brand">John Foos</a>
-    <a href="#dc-shoes" class="btn-brand">DC Shoes</a>
-    <a href="#columbia" class="btn-brand">Columbia</a>
-    <a href="#diadora" class="btn-brand">Diadora</a>
-  </nav>
-
-  <main>
-
-    <!-- SECCIÓN NIKE (2 Artículos) -->
-    <section id="nike">
-      <h2 class="brand-title">
-  <div class="brand-title-left">
-    <img src="https://cdn.simpleicons.org/nike/black" alt="Nike Logo" class="brand-logo">
-    <span>Nike</span>
-  </div>
-  <a href="https://meli.la/1JWdnF8" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand-more">
-    Ver más ofertas Nike en Mercado Libre
-  </a>
-</h2>
-      <div class="grid">
-        <!-- 1. Nike Juniper -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_622087-MLA75611886343_042024-F.webp" alt="Zapatillas Nike Juniper Trail 2">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda Argentina</span>
-              <span class="badge promo">6 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Nike Juniper Trail 2</h3>
-            <div class="price-container">
-              <span class="old-price">$179.999</span>
-              <p class="price">$150.542 <span class="discount">16% OFF</span></p>
-            </div>
-            <a href="https://meli.la/1LBcech" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-
-        <!-- 2. Nike Charge -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_867626-MLA83332018823_032025-F.webp" alt="Zapatillas Nike Charge Suede Negro">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">6 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Nike Charge Suede Negro</h3>
-            <div class="price-container">
-              <span class="old-price">$129.999</span>
-              <p class="price">$96.999,02 <span class="discount">35% OFF</span></p>
-            </div>
-            <a href="https://meli.la/1LBcech" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-      </div> 
-    </section>
-
-    <!-- SECCIÓN ADIDAS (2 Artículos) -->
-    <section id="adidas">
-      <h2><img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas Logo" class="brand-logo">
-  Adidas</h2>
-      <div class="grid">
-        <!-- 3. Adidas Courtwave -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_816798-MLA111246011546_052026-F.webp" alt="Zapatillas Adidas Lifestyle Courtwave Hombre Negro">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">6 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Adidas Lifestyle Courtwave Hombre Negro</h3>
-            <div class="price-container">
-              <span class="old-price"></span>
-              <p class="price">$99.999 <span class="discount"></span></p>
-            </div>
-            <a href="https://meli.la/1F9epbE" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-
-        <!-- 4. Adidas Rumblaze -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_902869-MLA84754768719_052025-F.webp" alt="Zapatillas Adidas Rumblaze">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">6 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Adidas Lifestyle Courtwave Hombre Negro</h3>
-            <div class="price-container">
-              <span class="old-price"></span>
-              <p class="price">$99.999 <span class="discount"></span></p>
-            </div>
-            <a href="https://meli.la/2Pa1Hjw" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-      </div> 
-    </section>
-
-    <!-- SECCIÓN FILA (2 Artículos) -->
-    <section id="fila">
-      <h2><img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Fila_logo.svg" alt="Fila Logo" class="brand-logo">
-  Fila</h2>
-      <div class="grid">
-        <!-- 5. Fila Progress Lite -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_734240-MLA113410225817_062026-F.webp" alt="Zapatillas Running Hombre Fila Progress Lite">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda Argentina</span>
-              <span class="badge promo">2 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Running Hombre Fila Progress Lite</h3>
-            <div class="price-container">
-              <span class="old-price">$84.899</span>
-              <p class="price">$76.409,10 <span class="discount">10% OFF</span></p>
-            </div>
-            <a href="https://meli.la/2Wmubi7" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-
-        <!-- 6. Fila Mujer Azalea -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_769626-MLA114205030138_082026-F.webp" alt="Zapatillas Fila Mujer Azalea">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">6 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Fila Mujer Azalea</h3>
-            <div class="price-container">
-              <span class="old-price">$84.900</span>
-              <p class="price">$64.999 <span class="discount">23% OFF</span></p>
-            </div>
-            <a href="https://meli.la/2oTMH2A" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-      </div> 
-    </section>
-
-    <!-- SECCIÓN KAPPA (2 Artículos) -->
-    <section id="kappa">
-      <h2 class="brand-title">
-  <img src="https://cdn.worldvectorlogo.com/logos/kappa-3.svg" alt="Kappa Logo" class="brand-logo">
-  Kappa
-</h2>
-      <div class="grid">
-        <!-- 7. Kappa Authentic Kai 4 -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_751995-MLA108110551439_032026-F.webp" alt="Zapatillas Kappa Authentic Kai 4 Blanco Unisex">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">3 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Kappa Authentic Kai 4 Blanco Unisex</h3>
-            <div class="price-container">
-              <span class="old-price">$79.999</span>
-              <p class="price">$58.216 <span class="discount">27% OFF</span></p>
-            </div>
-            <a href="https://meli.la/2ewYs1b" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-
-        <!-- 8. Kappa Rernal 2 -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_753723-MLA113807473661_062026-F.webp" alt="Zapatillas Kappa Rernal 2">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">3 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Kappa Rernal 2</h3>
-            <div class="price-container">
-              <span class="old-price">$69.999</span>
-              <p class="price">$49.190,69 <span class="discount">29% OFF</span></p>
-            </div>
-            <a href="https://meli.la/1msc1Vy" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-      </div> 
-    </section>
-
-    <!-- SECCIÓN PUMA (2 Artículos) -->
-    <section id="puma">
-     <h2 class="brand-title">
-  <img src="https://cdn.simpleicons.org/puma/black" alt="Puma Logo" class="brand-logo">
-  Puma
-</h2>
-      <div class="grid">
-        <!-- 9. Puma Rebound V6 Low -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_873896-MLA107828038684_032026-F.webp" alt="Zapatillas Puma Rebound V6 Low">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">6 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Puma Rebound V6 Low</h3>
-            <div class="price-container">
-              <span class="old-price"></span>
-              <p class="price">$109.999 <span class="discount"></span></p>
-            </div>
-            <a href="https://meli.la/2fscJk8" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-
-        <!-- 10. Puma Skyrocket Lite 2 -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_897344-MLA92586733349_092025-F.webp" alt="Zapatillas Puma Skyrocket Lite 2">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">6 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Puma Skyrocket Lite 2</h3>
-            <div class="price-container">
-              <span class="old-price"></span>
-              <p class="price">$99.999 <span class="discount"></span></p>
-            </div>
-            <a href="https://meli.la/1mrqejA" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-      </div> 
-    </section> 
-
-    <!-- SECCIÓN TOPPER (2 Artículos) -->
-    <section id="topper">
-      <h2 class="brand-title">
-  <img src="https://cdn.worldvectorlogo.com/logos/topper.svg" alt="Topper Logo" class="brand-logo">
-  Topper
-</h2>
-      <div class="grid">
-        <!-- 11. Topper Tie Break III -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_911668-MLA110740754055_042026-F.webp" alt="Zapatillas Topper Tie Break III">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">3 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Topper Tie Break III</h3>
-            <div class="price-container">
-              <span class="old-price">$88.999</span>
-              <p class="price">$53.993,76 <span class="discount">39% OFF</span></p>
-            </div>
-            <a href="https://meli.la/2UZPeAK" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-
-        <!-- 12. Topper Terre Blancas -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_706637-MLA75717000737_042024-F.webp" alt="Zapatillas Topper Terre Blancas">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">3 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Topper Terre Blancas</h3>
-            <div class="price-container">
-              <span class="old-price"></span>
-              <p class="price">$58.439,99 <span class="discount">23% OFF</span></p>
-            </div>
-            <a href="https://meli.la/2qPQs6a" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-      </div> 
-    </section>
-<!-- SECCIÓN NEW BALANCE (2 Artículos) -->
-    <section id="new-balance">
-      <h2 class="brand-title">
-  <img src="https://cdn.worldvectorlogo.com/logos/new-balance-2.svg" alt="New Balance Logo" class="brand-logo">
-  New Balance
-</h2>
-      <div class="grid">
-        <!-- 1. New Balance ML 515 -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_850232-MLA112253781645_052026-F.webp" alt="Zapatilla New Balance Hombre Ml 515">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">3 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatilla New Balance Hombre Ml 515</h3>
-            <div class="price-container">
-              <span class="old-price">$114.999</span>
-              <p class="price">$80.396 <span class="discount">30% OFF</span></p>
-            </div>
-            <a href="https://meli.la/21YMs2U" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-
-        <!-- 2. New Balance NM440 -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_885752-MLA112258970813_052026-F.webp" alt="Zapatillas New Balance Hombre Nm440">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">3 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas New Balance Hombre Nm440</h3>
-            <div class="price-container">
-              <span class="old-price">$139.998,76</span>
-              <p class="price">$97.875 <span class="discount">30% OFF</span></p>
-            </div>
-            <a href="https://meli.la/2NxksRG" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-      </div> 
-    </section>
-    <!-- SECCIÓN REEBOK (2 Artículos) -->
-    <section id="reebok">
-      <h2 class="brand-title">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Reebok_2019_logo.svg" alt="Reebok Logo" class="brand-logo">
-        Reebok
-      </h2>
-      <div class="grid">
-        <!-- 1. Reebok Classic Leather -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_731746-MLA116441781583_082026-F.webp" alt="Zapatillas Reebok Classic Leather">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">2 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Reebok Classic Leather</h3>
-            <div class="price-container">
-              <span class="old-price">$100.000</span>
-              <p class="price">$68.999 <span class="discount">31% OFF</span></p>
-            </div>
-            <a href="https://meli.la/34kcvsb" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-
-        <!-- 2. Reebok Vintage (Club C 85) -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_914699-MLA111919617490_062026-F.webp" alt="Zapatilla Urbana Unisex Reebok Vintage (club 85)">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">2 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatilla Urbana Unisex Reebok Vintage (club 85)</h3>
-            <div class="price-container">
-              <span class="old-price">$99.999</span>
-              <p class="price">$94.999,05 <span class="discount">5% OFF</span></p>
-            </div>
-            <a href="https://meli.la/17ryJzy" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-      </div> 
-    </section>
-    <!-- SECCIÓN ASICS (2 Artículos) -->
-    <section id="asics">
-      <h2 class="brand-title">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Asics_logo.svg" alt="Asics Logo" class="brand-logo">
-        Asics
-      </h2>
-      <div class="grid">
-        <!-- 1. Asics Gel Peake 2 -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_638539-MLA117426987869_092026-F.webp" alt="Zapatillas Asics Gel Peake 2 Hockey (unisex)">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">3 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatillas Asics Gel Peake 2 Hockey (unisex)</h3>
-            <div class="price-container">
-              <span class="old-price">$271.962,95</span>
-              <p class="price">$135.981,17 <span class="discount">50% OFF</span></p>
-            </div>
-            <a href="https://meli.la/2WxmmD6" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-
-        <!-- 2. Asics Skyhand OG U -->
-        <article class="card">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_966768-MLA112981696949_062026-F.webp" alt="Zapatilla Asics Skyhand OG U">
-          <div class="card-body">
-            <div class="badges">
-              <span class="badge shipping">Envío Gratis a toda la Argentina</span>
-              <span class="badge promo">6 Cuotas Sin Interés</span>
-            </div>
-            <h3 class="title">Zapatilla Asics Skyhand OG U</h3>
-            <div class="price-container">
-              <span class="old-price">$219.900</span>
-              <p class="price">$164.924 <span class="discount">25% OFF</span></p>
-            </div>
-            <a href="https://meli.la/2cuepsa" target="_blank" rel="sponsored noopener noreferrer" class="btn">Ver Oferta en Mercado Libre</a>
-          </div>
-        </article>
-      </div> 
-    </section>
+    <h1>🔥 Las mejores ofertas de zapatillas en Mercado Libre</h1>
     
-  </main>
+    <!-- BOTONES DE NAVEGACIÓN CON LOGO Y LINK DE AFILIADO -->
+    <nav class="brand-nav">
+      <a href="https://meli.la/1JWdnF8" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.simpleicons.org/nike/black" alt="Nike"> Nike
+      </a>
+      <a href="https://meli.la/1F9epbE" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas"> Adidas
+      </a>
+      <a href="https://meli.la/2Wmubi7" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Fila_logo.svg" alt="Fila"> Fila
+      </a>
+      <a href="https://meli.la/2ewYs1b" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.worldvectorlogo.com/logos/kappa-3.svg" alt="Kappa"> Kappa
+      </a>
+      <a href="https://meli.la/2fscJk8" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.simpleicons.org/puma/black" alt="Puma"> Puma
+      </a>
+      <a href="https://meli.la/2UZPeAK" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.worldvectorlogo.com/logos/topper.svg" alt="Topper"> Topper
+      </a>
+      <a href="https://meli.la/21YMs2U" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.worldvectorlogo.com/logos/new-balance-2.svg" alt="New Balance"> New Balance
+      </a>
+      <a href="https://meli.la/34kcvsb" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Reebok_2019_logo.svg" alt="Reebok"> Reebok
+      </a>
+      <a href="https://meli.la/2WxmmD6" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Asics_logo.svg" alt="Asics"> Asics
+      </a>
+      <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.simpleicons.org/underarmour/black" alt="Under Armour"> Under Armour
+      </a>
+      <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.simpleicons.org/converse/black" alt="Converse"> Converse
+      </a>
+      <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.simpleicons.org/vans/black" alt="Vans"> Vans
+      </a>
+      <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.worldvectorlogo.com/logos/salomon-2.svg" alt="Salomon"> Salomon
+      </a>
+      <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.worldvectorlogo.com/logos/skechers-1.svg" alt="Skechers"> Skechers
+      </a>
+      <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.simpleicons.org/dc/black" alt="DC Shoes"> DC Shoes
+      </a>
+      <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+        <img src="https://cdn.worldvectorlogo.com/logos/columbia-sportswear.svg" alt="Columbia"> Columbia
+      </a>
+    </nav>
+  </header>
 
 </body>
 </html>
