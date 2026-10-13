@@ -146,10 +146,22 @@
       transition: all 0.25s ease;
     }
 
+    .btn-brand .brand-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      font-size: 1rem;
+    }
+
     .btn-brand img {
       height: 18px;
       width: auto;
+      max-width: 45px;
       object-fit: contain;
+      filter: brightness(0);
+      transition: filter 0.25s ease;
     }
 
     .btn-brand:hover {
@@ -164,7 +176,7 @@
       filter: brightness(0) invert(1);
     }
 
-    /* SECCIÓN DE GARANTÍAS / VALOR */
+    /* SECCIÓN DE GARANTÍAS */
     .trust-section {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -266,235 +278,86 @@
         <input type="text" id="brandSearch" onkeyup="filterBrands()" placeholder="🔍 Buscar marca (ej. Nike, Adidas, Puma)...">
       </div>
       
-      <!-- BOTONES DE NAVEGACIÓN CON LOGO CDN Y LINK DE AFILIADO -->
+      <!-- BOTONES DE NAVEGACIÓN COMPLETA DE MARCAS -->
       <nav class="brand-nav" id="brandContainer">
-        <a href="https://meli.la/2cKaSr9" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/nike/black" alt="Nike"> Nike
-        </a>
-        <a href="https://meli.la/2iugPMs" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/adidas/black" alt="Adidas"> Adidas
-        </a>
-        <a href="https://meli.la/23XxBvU" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/fila/black" alt="Fila"> Fila
-        </a>
-        <a href="https://meli.la/2ewYs1b" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.worldvectorlogo.com/logos/kappa-3.svg" alt="Kappa"> Kappa
-        </a>
-        <a href="https://meli.la/2fscJk8" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/puma/black" alt="Puma"> Puma
-        </a>
-        <a href="https://meli.la/2UZPeAK" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.worldvectorlogo.com/logos/topper.svg" alt="Topper"> Topper
-        </a>
-        <a href="https://meli.la/21YMs2U" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/newbalance/black" alt="New Balance"> New Balance
-        </a>
-        <a href="https://meli.la/34kcvsb" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/reebok/black" alt="Reebok"> Reebok
-        </a>
-        <a href="https://meli.la/2WxmmD6" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/asics/black" alt="Asics"> Asics
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/underarmour/black" alt="Under Armour"> Under Armour
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/converse/black" alt="Converse"> Converse
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/vans/black" alt="Vans"> Vans
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/salomon/black" alt="Salomon"> Salomon
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/skechers/black" alt="Skechers"> Skechers
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/dcshoes/black" alt="DC Shoes"> DC Shoes
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/columbia/black" alt="Columbia"> Columbia
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/on/black" alt="On"> On Running
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/avia/black" alt="Avia"> Avia
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/umbro/black" alt="Umbro"> Umbro
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/wilson/black" alt="Wilson"> Wilson
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/saucony/black" alt="Saucony"> Saucony
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/hoka/black" alt="Hoka"> Hoka
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/joma/black" alt="Joma"> Joma
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/merrell/black" alt="Merrell"> Merrell
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/lecoqsportif/black" alt="Le Coq Sportif"> Le Coq Sportif
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/superga/black" alt="Superga"> Superga
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/brooksrunning/black" alt="Brooks"> Brooks
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/mizuno/black" alt="Mizuno"> Mizuno
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/olympikus/black" alt="Olympikus"> Olympikus
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/airwalk/black" alt="Airwalk"> Airwalk
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/tommyhilfiger/black" alt="Tommy Hilfiger"> Tommy Hilfiger
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/lacoste/black" alt="Lacoste"> Lacoste
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/levis/black" alt="Levi's"> Levi's
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/lotto/black" alt="Lotto"> Lotto
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/head/black" alt="Head"> Head
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/timberland/black" alt="Timberland"> Timberland
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/michelin/black" alt="Michelin"> Michelin
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/diadora/black" alt="Diadora"> Diadora
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/veja/black" alt="Veja"> Veja
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/gucci/black" alt="Gucci"> Gucci
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/balenciaga/black" alt="Balenciaga"> Balenciaga
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/ugg/black" alt="UGG"> UGG
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/bmw/black" alt="BMW"> BMW
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/altra/black" alt="Altra"> Altra
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/onitsukatiger/black" alt="Onitsuka Tiger"> Onitsuka Tiger
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/boss/black" alt="BOSS"> BOSS
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/nobull/black" alt="Nobull"> Nobull
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/ecco/black" alt="Ecco"> Ecco
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/globe/black" alt="Globe"> Globe
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/sparco/black" alt="Sparco"> Sparco
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/kswiss/black" alt="K-Swiss"> K-Swiss
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/supra/black" alt="Supra"> Supra
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/anta/black" alt="Anta"> Anta
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/diesel/black" alt="Diesel"> Diesel
-        </a>
+        <!-- MARCAS CON LINK DE AFILIADO CONFIGURADO -->
+        <a href="https://meli.la/2cKaSr9" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">✔️</span> Nike</a>
+        <a href="https://meli.la/2iugPMs" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👟</span> Adidas</a>
+        <a href="https://meli.la/23XxBvU" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🔴</span> Fila</a>
+        <a href="https://meli.la/2ewYs1b" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇮🇹</span> Kappa</a>
+        <a href="https://meli.la/2fscJk8" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🐾</span> Puma</a>
+        <a href="https://meli.la/2UZPeAK" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇦🇷</span> Topper</a>
+        <a href="https://meli.la/21YMs2U" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇳</span> New Balance</a>
+        <a href="https://meli.la/34kcvsb" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇬🇧</span> Reebok</a>
+        <a href="https://meli.la/2WxmmD6" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇯🇵</span> Asics</a>
 
-        <!-- MARCAS PENDIENTES / LOCALES SIN CDN GLOBAL -->
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          John Foos
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Jaguar
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Montagne
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Hush Puppies
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Scandinavian
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Pony
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Hi-Tec
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          47 Street
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Kevingston
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Gola
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Prüne
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Penalty
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Bochin
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Dufour
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Munich
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Atomik
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Finders
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Ringo
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Golden Goose
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Cole Haan
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          Bullpadel
-        </a>
+        <!-- MARCAS DEPORTIVAS Y URBANAS (Carga Garantizada) -->
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🛡️</span> Under Armour</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">⭐</span> Converse</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🏁</span> Vans</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🏔️</span> Salomon</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">⚡</span> Skechers</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🛹</span> DC Shoes</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🌲</span> Columbia</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">☁️</span> On Running</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👟</span> John Foos</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🦅</span> Avia</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">💎</span> Umbro</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🐆</span> Jaguar</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🎾</span> Wilson</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🏃</span> Saucony</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🕊️</span> Hoka</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🏕️</span> Montagne</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🐶</span> Hush Puppies</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">⚽</span> Joma</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">❄️</span> Scandinavian</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🥾</span> Merrell</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🐴</span> Pony</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🐓</span> Le Coq Sportif</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇮🇹</span> Superga</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🏃‍♂️</span> Brooks</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🌊</span> Mizuno</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🥾</span> Hi-Tec</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇧🇷</span> Olympikus</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">💖</span> 47 Street</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🛹</span> Airwalk</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇺🇸</span> Tommy Hilfiger</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🐊</span> Lacoste</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🏉</span> Kevingston</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇬🇧</span> Gola</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👖</span> Levi's</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👜</span> Prüne</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🟢</span> Lotto</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">⚽</span> Penalty</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇦🇷</span> Bochin</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🎾</span> Head</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🌲</span> Timberland</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🚗</span> Michelin</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👕</span> Dufour</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">❌</span> Munich</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">⚛️</span> Atomik</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇮🇹</span> Diadora</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🔍</span> Finders</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👞</span> Ringo</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🌱</span> Veja</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">✨</span> Gucci</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🖤</span> Balenciaga</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">⭐</span> Golden Goose</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👢</span> UGG</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🏎️</span> BMW</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🦶</span> Altra</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🐅</span> Onitsuka Tiger</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👔</span> BOSS</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🐂</span> Nobull</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👞</span> Cole Haan</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🎾</span> Bullpadel</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👞</span> Ecco</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🛹</span> Globe</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🏁</span> Sparco</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇺🇸</span> K-Swiss</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👑</span> Supra</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">🇨🇳</span> Anta</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><span class="brand-icon">👖</span> Diesel</a>
       </nav>
     </header>
 
@@ -522,7 +385,7 @@
     </footer>
   </div>
 
-  <!-- SCRIPT PARA FILTRAR MARCAS -->
+  <!-- SCRIPT PARA FILTRAR MARCAS EN TIEMPO REAL -->
   <script>
     function filterBrands() {
       const input = document.getElementById('brandSearch').value.toLowerCase();
