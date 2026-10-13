@@ -152,6 +152,11 @@
       object-fit: contain;
     }
 
+    /* TAMAÑO MAYOR PARA LOGOS ANCHOS O DETALLADOS */
+    .btn-brand img.logo-lg {
+      height: 24px;
+    }
+
     .btn-brand:hover {
       background-color: #3483fa;
       color: #ffffff;
@@ -235,6 +240,10 @@
       .btn-brand img {
         height: 15px;
       }
+
+      .btn-brand img.logo-lg {
+        height: 20px;
+      }
     }
   </style>
 </head>
@@ -272,10 +281,10 @@
           <img src="https://cdn.simpleicons.org/nike/black" alt="Nike"> Nike
         </a>
         <a href="https://meli.la/2iugPMs" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" alt="Adidas"> Adidas
+          <img src="https://cdn.simpleicons.org/adidas/black" alt="Adidas"> Adidas
         </a>
         <a href="https://meli.la/23XxBvU" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Fila_logo.svg" alt="Fila"> Fila
+          <img src="https://cdn.simpleicons.org/fila/black" alt="Fila"> Fila
         </a>
         <a href="https://meli.la/2ewYs1b" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
           <img src="https://cdn.worldvectorlogo.com/logos/kappa-3.svg" alt="Kappa"> Kappa
@@ -287,13 +296,13 @@
           <img src="https://cdn.worldvectorlogo.com/logos/topper.svg" alt="Topper"> Topper
         </a>
         <a href="https://meli.la/21YMs2U" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.worldvectorlogo.com/logos/new-balance-2.svg" alt="New Balance"> New Balance
+          <img src="https://cdn.simpleicons.org/newbalance/black" alt="New Balance"> New Balance
         </a>
         <a href="https://meli.la/34kcvsb" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Reebok_2019_logo.svg" alt="Reebok"> Reebok
+          <img src="https://cdn.simpleicons.org/reebok/black" alt="Reebok"> Reebok
         </a>
         <a href="https://meli.la/2WxmmD6" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Asics_logo.svg" alt="Asics"> Asics
+          <img src="https://cdn.simpleicons.org/asics/black" alt="Asics"> Asics
         </a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
           <img src="https://cdn.simpleicons.org/underarmour/black" alt="Under Armour"> Under Armour
@@ -305,60 +314,182 @@
           <img src="https://cdn.simpleicons.org/vans/black" alt="Vans"> Vans
         </a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.worldvectorlogo.com/logos/salomon-2.svg" alt="Salomon"> Salomon
+          <img src="https://cdn.simpleicons.org/salomon/black" class="logo-lg" alt="Salomon"> Salomon
         </a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.worldvectorlogo.com/logos/skechers-1.svg" alt="Skechers"> Skechers
+          <img src="https://cdn.simpleicons.org/skechers/black" class="logo-lg" alt="Skechers"> Skechers
         </a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/dc/black" alt="DC Shoes"> DC Shoes
+          <img src="https://cdn.simpleicons.org/dcshoes/black" alt="DC Shoes"> DC Shoes
         </a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.worldvectorlogo.com/logos/columbia-sportswear.svg" alt="Columbia"> Columbia
+          <img src="https://cdn.simpleicons.org/columbia/black" alt="Columbia"> Columbia
         </a>
-      </nav>
-    </header>
-
-    <!-- BLOQUES DE GARANTÍA Y CONFIANZA -->
-    <div class="trust-section">
-      <div class="trust-card">
-        <span>🛡️</span>
-        <h4>Compra Segura</h4>
-        <p>Garantía de Mercado Libre en todas tus compras.</p>
-      </div>
-      <div class="trust-card">
-        <span>🚚</span>
-        <h4>Mercado Envíos</h4>
-        <p>Recibí tu pedido en cualquier punto del país.</p>
-      </div>
-      <div class="trust-card">
-        <span>💳</span>
-        <h4>Medios de Pago</h4>
-        <p>Tarjetas de crédito, débito y Mercado Pago.</p>
-      </div>
-    </div>
-
-    <footer>
-      <p>Seleccioná tu marca favorita para acceder directamente a la tienda oficial e itinerario de ofertas dentro de Mercado Libre Argentina.</p>
-    </footer>
-  </div>
-
-  <!-- SCRIPT PARA FILTRAR MARCAS -->
-  <script>
-    function filterBrands() {
-      const input = document.getElementById('brandSearch').value.toLowerCase();
-      const buttons = document.querySelectorAll('#brandContainer .btn-brand');
-
-      buttons.forEach(button => {
-        const text = button.textContent.toLowerCase();
-        if (text.includes(input)) {
-          button.style.display = 'inline-flex';
-        } else {
-          button.style.display = 'none';
-        }
-      });
-    }
-  </script>
-
-</body>
-</html>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/on/black" alt="On"> On
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 John Foos
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/avia/black" alt="Avia"> Avia
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/umbro/black" alt="Umbro"> Umbro
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Jaguar
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/wilson/black" alt="Wilson"> Wilson
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/saucony/black" alt="Saucony"> Saucony
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/hoka/black" alt="Hoka"> Hoka
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Montagne
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/hushpuppies/black" alt="Hush Puppies"> Hush Puppies
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/joma/black" alt="Joma"> Joma
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Scandinavian
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/merrell/black" alt="Merrell"> Merrell
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/pony/black" alt="Pony"> Pony
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/lecoqsportif/black" alt="Le Coq Sportif"> Le Coq Sportif
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/superga/black" alt="Superga"> Superga
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/brooksrunning/black" alt="Brooks"> Brooks
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/mizuno/black" alt="Mizuno"> Mizuno
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/hitec/black" alt="Hi-Tec"> Hi-Tec
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/olympikus/black" alt="Olympikus"> Olympikus
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 47 Street
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/airwalk/black" alt="Airwalk"> Airwalk
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/tommyhilfiger/black" alt="Tommy Hilfiger"> Tommy Hilfiger
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/lacoste/black" alt="Lacoste"> Lacoste
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Kevingston
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/gola/black" alt="Gola"> Gola
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/levis/black" alt="Levi's"> Levi's
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Prüne
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/lotto/black" alt="Lotto"> Lotto
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/penalty/black" alt="Penalty"> Penalty
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Bochin
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/head/black" alt="Head"> Head
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/timberland/black" alt="Timberland"> Timberland
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/michelin/black" alt="Michelin"> Michelin
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Dufour
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/munich/black" alt="Munich"> Munich
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Atomik
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/diadora/black" alt="Diadora"> Diadora
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Finders
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Ringo
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/veja/black" alt="Veja"> Veja
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/gucci/black" alt="Gucci"> Gucci
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/balenciaga/black" alt="Balenciaga"> Balenciaga
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Golden Goose
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/ugg/black" alt="UGG"> UGG
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/bmw/black" alt="BMW"> BMW
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/altra/black" alt="Altra"> Altra
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/onitsukatiger/black" alt="Onitsuka Tiger"> Onitsuka Tiger
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/boss/black" alt="BOSS"> BOSS
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/nobull/black" alt="Nobull"> Nobull
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Cole Haan
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          👟 Bullpadel
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/ecco/black" alt="Ecco"> Ecco
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/globe/black" alt="Globe"> Globe
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/sparco/black" alt="Sparco"> Sparco
+        </a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
+          <img src="https://cdn.simpleicons.org/kswiss/black" alt="K-Swiss"> K-Swiss
+        </a>
