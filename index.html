@@ -149,7 +149,7 @@
     .btn-brand img {
       height: 18px;
       width: auto;
-      max-width: 40px;
+      max-width: 45px;
       object-fit: contain;
       filter: brightness(0);
       transition: filter 0.25s ease;
@@ -167,7 +167,7 @@
       filter: brightness(0) invert(1);
     }
 
-    /* SECCIÓN DE GARANTÍAS / VALOR */
+    /* SECCIÓN DE GARANTÍAS */
     .trust-section {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -269,174 +269,62 @@
         <input type="text" id="brandSearch" onkeyup="filterBrands()" placeholder="🔍 Buscar marca (ej. Nike, Adidas, Puma)...">
       </div>
       
-      <!-- BOTONES DE NAVEGACIÓN CON LOGO CDN Y LINK DE AFILIADO -->
+      <!-- BOTONES DE NAVEGACIÓN COMPLETA DE MARCAS -->
       <nav class="brand-nav" id="brandContainer">
-        <a href="https://meli.la/2cKaSr9" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/nike/black" alt="Nike"> Nike
-        </a>
-        <a href="https://meli.la/2iugPMs" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/adidas/black" alt="Adidas"> Adidas
-        </a>
-        <a href="https://meli.la/23XxBvU" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/fila/black" alt="Fila"> Fila
-        </a>
-        <a href="https://meli.la/2ewYs1b" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.worldvectorlogo.com/logos/kappa-3.svg" alt="Kappa"> Kappa
-        </a>
-        <a href="https://meli.la/2fscJk8" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/puma/black" alt="Puma"> Puma
-        </a>
-        <a href="https://meli.la/2UZPeAK" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Topper_logo_%28Argentina%2C_1995%E2%80%932009%2C_monochrome%29.svg?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=original" alt="Topper"> Topper
-        </a>
-        <a href="https://meli.la/21YMs2U" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/newbalance/black" alt="New Balance"> New Balance
-        </a>
-        <a href="https://meli.la/34kcvsb" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/reebok/black" alt="Reebok"> Reebok
-        </a>
-        <a href="https://meli.la/2WxmmD6" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Asics_Logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Asics"> Asics
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/underarmour/black" alt="Under Armour"> Under Armour
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Converse_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Converse"> Converse
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Vans-logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Vans"> Vans
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Salomon_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Salomon"> Salomon
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Skechers.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Skechers"> Skechers
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/en/7/70/DCSHOECOUSA_Logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" alt="DC Shoes"> DC Shoes
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Columbia_Sportswear_Co_logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Columbia"> Columbia
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/On-cloud-logo-white-background.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="On"> On Running
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Avia_logo_%281983%29.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Avia"> Avia
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Umbro_logo_%28current%29.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Umbro"> Umbro
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Wilson-logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Wilson"> Wilson
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Logo_Saucony.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Saucony"> Saucony
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/it/0/06/Hoka_logo_2020.svg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original" alt="Hoka"> Hoka
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Joma_Sport.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Joma"> Joma
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Merrell-Logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Merrell"> Merrell
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/fr/9/9c/Le_coq_sportif_2010_logo.svg?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=original" alt="Le Coq Sportif"> Le Coq Sportif
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Superga_logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Superga"> Superga
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Brooks_%28former_logo%29.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Brooks"> Brooks
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/MIZUNO_logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Mizuno"> Mizuno
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Logotipo_da_Olympikus_%282021%29.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Olympikus"> Olympikus
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Airwalk_Logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Airwalk"> Airwalk
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Tommy_hilfig_vectorlogo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Tommy Hilfiger"> Tommy Hilfiger
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Logo_Lacoste_2026.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Lacoste"> Lacoste
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Levi%27s_logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Levi's"> Levi's
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Lotto_Sport_Italia_Logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Lotto"> Lotto
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/de/7/73/Head_%28Sportartikelhersteller%29_logo.svg?utm_source=de.wikipedia.org&utm_campaign=index&utm_content=original" alt="Head"> Head
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/de/8/84/Timberland-Logo.svg?utm_source=de.wikipedia.org&utm_campaign=index&utm_content=original" alt="Timberland"> Timberland
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/de/9/91/Michelin_Logo.svg?utm_source=de.wikipedia.org&utm_campaign=index&utm_content=original" alt="Michelin"> Michelin
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/de/5/5c/Diadora-logo.svg?utm_source=de.wikipedia.org&utm_campaign=index&utm_content=original" alt="Diadora"> Diadora
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Veja_%28brand%29.svg" alt="Veja"> Veja
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/gucci/black" alt="Gucci"> Gucci
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/balenciaga/black" alt="Balenciaga"> Balenciaga
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/ugg/black" alt="UGG"> UGG
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/bmw/black" alt="BMW"> BMW
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-  <img src="https://cdn.worldvectorlogo.com/logos/altra-running.svg" alt="Altra"> Altra
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/onitsukatiger/black" alt="Onitsuka Tiger"> Onitsuka Tiger
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/boss/black" alt="BOSS"> BOSS
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/nobull/black" alt="Nobull"> Nobull
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/ecco/black" alt="Ecco"> Ecco
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/globe/black" alt="Globe"> Globe
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/sparco/black" alt="Sparco"> Sparco
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/kswiss/black" alt="K-Swiss"> K-Swiss
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/supra/black" alt="Supra"> Supra
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/anta/black" alt="Anta"> Anta
-        </a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">
-          <img src="https://cdn.simpleicons.org/diesel/black" alt="Diesel"> Diesel
-        </a>
+        <!-- BLOQUE INTACTO HASTA TIMBERLAND -->
+        <a href="https://meli.la/2cKaSr9" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://cdn.simpleicons.org/nike/black" alt="Nike"> Nike</a>
+        <a href="https://meli.la/2iugPMs" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://cdn.simpleicons.org/adidas/black" alt="Adidas"> Adidas</a>
+        <a href="https://meli.la/23XxBvU" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://cdn.simpleicons.org/fila/black" alt="Fila"> Fila</a>
+        <a href="https://meli.la/2ewYs1b" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://cdn.worldvectorlogo.com/logos/kappa-3.svg" alt="Kappa"> Kappa</a>
+        <a href="https://meli.la/2fscJk8" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://cdn.simpleicons.org/puma/black" alt="Puma"> Puma</a>
+        <a href="https://meli.la/2UZPeAK" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Topper_logo_%28Argentina%2C_1995%E2%80%932009%2C_monochrome%29.svg?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=original" alt="Topper"> Topper</a>
+        <a href="https://meli.la/21YMs2U" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://cdn.simpleicons.org/newbalance/black" alt="New Balance"> New Balance</a>
+        <a href="https://meli.la/34kcvsb" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://cdn.simpleicons.org/reebok/black" alt="Reebok"> Reebok</a>
+        <a href="https://meli.la/2WxmmD6" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Asics_Logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Asics"> Asics</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://cdn.simpleicons.org/underarmour/black" alt="Under Armour"> Under Armour</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Converse_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Converse"> Converse</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Vans-logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Vans"> Vans</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Salomon_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Salomon"> Salomon</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Skechers.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Skechers"> Skechers</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/en/7/70/DCSHOECOUSA_Logo.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" alt="DC Shoes"> DC Shoes</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Columbia_Sportswear_Co_logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Columbia"> Columbia</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/On-cloud-logo-white-background.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="On"> On Running</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Avia_logo_%281983%29.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Avia"> Avia</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Umbro_logo_%28current%29.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Umbro"> Umbro</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Wilson-logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Wilson"> Wilson</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Logo_Saucony.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Saucony"> Saucony</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/it/0/06/Hoka_logo_2020.svg?utm_source=it.wikipedia.org&utm_campaign=index&utm_content=original" alt="Hoka"> Hoka</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Joma_Sport.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Joma"> Joma</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Merrell-Logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Merrell"> Merrell</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/fr/9/9c/Le_coq_sportif_2010_logo.svg?utm_source=fr.wikipedia.org&utm_campaign=index&utm_content=original" alt="Le Coq Sportif"> Le Coq Sportif</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Superga_logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Superga"> Superga</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Brooks_%28former_logo%29.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Brooks"> Brooks</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/MIZUNO_logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Mizuno"> Mizuno</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Logotipo_da_Olympikus_%282021%29.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Olympikus"> Olympikus</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Airwalk_Logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Airwalk"> Airwalk</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Tommy_hilfig_vectorlogo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Tommy Hilfiger"> Tommy Hilfiger</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Logo_Lacoste_2026.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Lacoste"> Lacoste</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Levi%27s_logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Levi's"> Levi's</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Lotto_Sport_Italia_Logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Lotto"> Lotto</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/de/7/73/Head_%28Sportartikelhersteller%29_logo.svg?utm_source=de.wikipedia.org&utm_campaign=index&utm_content=original" alt="Head"> Head</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/de/8/84/Timberland-Logo.svg?utm_source=de.wikipedia.org&utm_campaign=index&utm_content=original" alt="Timberland"> Timberland</a>
 
-        <!-- MARCAS PENDIENTES / LOCALES SIN CDN GLOBAL -->
+        <!-- NUEVOS ENLACES SVG SOLICITADOS -->
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Gucci_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Gucci"> Gucci</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Balenciaga_Logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Balenciaga"> Balenciaga</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/80/UGG_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="UGG"> UGG</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/en/8/87/Onitsuka_Tiger_Logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Onitsuka Tiger"> Onitsuka Tiger</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Hugo_Boss_logo_2021.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Hugo Boss"> Hugo Boss</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Ecco_shoes_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Ecco"> Ecco</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/K-Swiss_logo_%282015%29.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="K-Swiss"> K-Swiss</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Anta_logo.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Anta"> Anta</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Jaguar_2024.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Jaguar"> Jaguar</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Golden_Goose_logo.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Golden Goose"> Golden Goose</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Cole_Haan_Logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Cole Haan"> Cole Haan</a>
+        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Logotipo_da_Penalty_%282024%29.svg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="Penalty"> Penalty</a>
+
+        <!-- RESTO DE MARCAS PENDIENTES -->
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">John Foos</a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Jaguar</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Montagne</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Hush Puppies</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Scandinavian</a>
@@ -446,15 +334,12 @@
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Kevingston</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Gola</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Prüne</a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Penalty</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Bochin</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Dufour</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Munich</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Atomik</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Finders</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Ringo</a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Golden Goose</a>
-        <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Cole Haan</a>
         <a href="#" target="_blank" rel="sponsored noopener noreferrer" class="btn-brand">Bullpadel</a>
       </nav>
     </header>
